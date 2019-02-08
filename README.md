@@ -8,6 +8,7 @@ wget https://dl.google.com/go/go1.11.5.linux-amd64.tar.gz
 tar xvf go1.11.5.linux-amd64.tar.gz
 mv go /usr/local/
 ```
+make sure you have `/usr/local` in your $PATH
 
 create a $GOPATH
 `export GOPATH=$HOME/go`
@@ -24,7 +25,7 @@ Ensure you have all the correct dependencies in your repo:
 `dep ensure -v`
 
 ### Build the binary:
-go build cmd/main.go
+`go build cmd/main.go`
 
 ### Run the binary:
-./main.go
+`./main.go`
